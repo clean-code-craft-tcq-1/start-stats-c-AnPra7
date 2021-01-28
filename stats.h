@@ -1,4 +1,5 @@
 //defining the structure
+#define NAN 0.0f
 struct Stats{
     float average;
     float min;
