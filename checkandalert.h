@@ -2,6 +2,6 @@
 #define checkandalert
 
 #include "stats.h"
-void emailAlerter();
-void ledAlerter();
+void emailAlerter(int &x);
+void ledAlerter(int &y);
 #endif
