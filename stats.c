@@ -37,7 +37,7 @@ int c, index = 0;
          if(s.min>numberset[i])
 		  s.min=numberset[i];   
 		   if(s.max<numberset[i])
-		    s.max=a[i];       
+		    s.max=numberset[i];       
     }
     
     return s;
