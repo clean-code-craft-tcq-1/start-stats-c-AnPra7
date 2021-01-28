@@ -1,11 +1,11 @@
 #include "checkandalert.h"
 #include "stats.h"
-void emailAlerter()
+void emailAlerter(int *)
 {
   emailAlertCallCount = 1;
   //return (emailAlertCallCount==1);
 }
-void ledAlerter()
+void ledAlerter(int *)
 {
   ledAlertCallCount = 1;
   //return (ledAlertCallCount==1);
@@ -15,7 +15,7 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stat
   
   if(computedStats.max>maxThreshold)
   {
-    emailAlerter();
-    ledAlerter();
+    emailAlerter(&emailAlertCallCount);
+    ledAlerter(&ledAlertCallCount);
   }
 }
