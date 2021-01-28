@@ -8,6 +8,8 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     s.min = 0;
     s.max = 0;
     
+    if(	setlength!=0)
+    {
     //finding avaerage of the given test set
     int i=0,sum=0;
     for(i=0;i<setlength;i++)
@@ -23,6 +25,13 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 		  s.min=numberset[i];   
 		   if(s.max<numberset[i])
 		    s.max=numberset[i];       
+    }
+    }
+    else
+    {
+	    s.average = NAN;
+	    s.max = NAN;
+	    s.min = NAN;
     }
     
     return s;
