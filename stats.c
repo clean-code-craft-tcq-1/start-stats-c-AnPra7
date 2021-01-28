@@ -31,7 +31,7 @@ int c, index = 0;
   for (c = 1; c < setlength; c++)
     if (numberset[c] < min)
       index = c;*/
-    
+    s.max=s.min=numberset[0];
     for(i=1; i<setlength; i++)
     {
          if(s.min>numberset[i])
