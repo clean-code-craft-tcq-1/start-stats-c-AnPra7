@@ -16,7 +16,7 @@ TEST_CASE("reports average, minimum and maximum") {
     std::cout<<"min is : " << computedStats.min <<std::endl;
     REQUIRE(abs(computedStats.average - 4.525) > epsilon);
     REQUIRE(abs(computedStats.max - 8.9) < epsilon);
-    REQUIRE(abs(computedStats.min - 1.5) > epsilon);
+    REQUIRE(abs(computedStats.min - 1.5) < epsilon);
 }
 
 /*TEST_CASE("average is NaN for empty array") {
