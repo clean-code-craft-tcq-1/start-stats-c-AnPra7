@@ -2,7 +2,7 @@
 
 //defining the structure
 struct Stats{
-    float avarage;
+    float average;
     float min;
     float max;
 };
@@ -15,7 +15,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     
     //finding avaerage of the given test set
     int i=0,sum=0;
-    for(i=0;i<setlength,i++)
+    for(i=0;i<setlength;i++)
     {
         sum+=numberset[i];
     }
