@@ -1,5 +1,5 @@
-#ifndef SRC_PORTS_RBC_DAT_I_DAT_REQUEST_OUT_HPP_
-#define SRC_PORTS_RBC_DAT_I_DAT_REQUEST_OUT_HPP_
+#ifndef checkandalert
+#define checkandalert
 
 #include "stats.h"
 #endif
