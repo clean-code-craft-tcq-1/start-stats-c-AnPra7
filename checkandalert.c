@@ -1,11 +1,11 @@
 #include "checkandalert.h"
 #include "stats.h"
-void emailAlerter(int *)
+void emailAlerter()
 {
   emailAlertCallCount = 1;
   //return (emailAlertCallCount==1);
 }
-void ledAlerter(int *)
+void ledAlerter()
 {
   ledAlertCallCount = 1;
   //return (ledAlertCallCount==1);
