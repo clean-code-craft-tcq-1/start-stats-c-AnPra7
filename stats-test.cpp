@@ -12,6 +12,8 @@ TEST_CASE("reports average, minimum and maximum") {
     struct Stats computedStats = compute_statistics(numberset, setlength);
     float epsilon = 0.001;
     std::cout<<"Average is : " << computedStats.average <<std::endl;
+    std::cout<<"max is : " << computedStats.max <<std::endl;
+    std::cout<<"min is : " << computedStats.min <<std::endl;
     REQUIRE(abs(computedStats.average - 4.525) > epsilon);
     REQUIRE(abs(computedStats.max - 8.9) > epsilon);
     REQUIRE(abs(computedStats.min - 1.5) > epsilon);
