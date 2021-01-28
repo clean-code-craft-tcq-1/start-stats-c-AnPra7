@@ -26,13 +26,17 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
    }
     
      //finding minimum
-    for (i=0; i<setlength; i++)
-   {
-   if (numberset[i]<s.min)
-   {
-        s.min=numberset[i];
-   }
-   }
+//     for (i=0; i<setlength; i++)
+//    {
+//    if (numberset[i]<s.min)
+//    {
+//         s.min=numberset[i];
+//    }
+//    }
+    
+    int res = numberset[0];
+    for (i = 1; i < setlength; i++)
+        res = min(res, numberset[i]);
     
     return s;
     
